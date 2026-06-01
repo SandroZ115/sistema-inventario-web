@@ -1,0 +1,81 @@
+/* src/styles/reportes.css */
+
+.rep-filtros {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.rep-filtros label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--texto-suave);
+}
+.rep-filtros input {
+  display: block;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid var(--borde);
+  border-radius: 9px;
+  font-size: 14px;
+  font-family: inherit;
+  background: var(--superficie);
+  color: var(--texto);
+  outline: none;
+}
+.rep-filtros input:focus { border-color: var(--acento); }
+
+.rep-exportar {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+.rep-exportar button {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  color: var(--texto);
+  padding: 10px 16px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.rep-exportar button:hover {
+  border-color: var(--acento);
+  color: var(--acento);
+}
+
+.rep-resumen {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.rep-graficos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+.rep-grafico {
+  background: var(--superficie);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 20px;
+}
+.rep-grafico h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--texto);
+  margin-bottom: 16px;
+}
+
+@media (max-width: 900px) {
+  .rep-graficos { grid-template-columns: 1fr; }
+  .rep-resumen { grid-template-columns: 1fr; }
+}

@@ -13,7 +13,7 @@ import Movimientos from "./pages/Movimientos";
 import Ventas from "./pages/Ventas";
 import Compras from "./pages/Compras";
 import Atencion from "./pages/Atencion";
-import EnConstruccion from "./pages/EnConstruccion";
+import Reportes from "./pages/Reportes";
 
 function Sistema() {
   const { usuario } = useAuth();
@@ -31,8 +31,7 @@ function Sistema() {
         <Route path="/ventas" element={<Ventas />} />
         <Route path="/compras" element={<Compras />} />
         <Route path="/atencion" element={<Atencion />} />
-        {/* reportes lo dejamos para el final */}
-        <Route path="/reportes" element={<EnConstruccion nombre="Reportes" />} />
+        <Route path="/reportes" element={<Reportes />} />
         <Route path="*" element={<Navigate to="/inventario" replace />} />
       </Route>
     </Routes>

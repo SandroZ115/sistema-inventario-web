@@ -141,3 +141,14 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+
+# ===== PHP / Composer (backend) =====
+/backend/vendor/
+composer.phar
+# Archivos de configuracion local con credenciales
+/backend/config/db.local.php
+# ===== Sistema operativo / IDE =====
+.DS_Store
+Thumbs.db
+.idea/
